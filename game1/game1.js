@@ -30,7 +30,7 @@ function guessAttempt()
 {
   const guessesRemainingElement = document.getElementById("guesses-remaining");
   guesses++;
-  if (guesses === 10) {
+  if (guesses >= 10) {
     guessesRemainingElement.textContent = "0 guesses left";
   } else {
     guessesRemainingElement.textContent = `${10 - guesses} guesses remaining`;

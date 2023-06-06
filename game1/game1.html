@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game1.css">
+    <!-- Recommended fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+    <script src="game1.js"></script>
+    <title>Game 1</title>
+  </head>
+  <body onload="setValue()">
+
+
+    
+    <!-- Navigation bar-->
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+      </ul>
+    </nav>
+
+
+
+    <!-- Game section-->
+    <div class="game">
+      <h1>Guess the Number</h1>
+      <label for="guess">Choose a number between 1-100:</label>
+      <input type="number" id="guess" min="1" max="100">
+      <button type="button" id="checkButton" onclick="checkGuess()">Check Guess</button>
+      <p id="result"></p>
+      <p id="guesses-remaining">10 guesses remaining</p>
+    </div>
+
+
+
+    <!-- Footer-->
+    <footer>
+      <p>jangell2023@pingry.org</p>
+      <p>Site by Jack Angell</p>
+    </footer>
+
+
+
+    </body>
+</html>
